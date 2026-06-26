@@ -3,4 +3,6 @@ test
 train
 valid
 Dataset-Minecraft
-Dataset-Minecraft/Clasificacion Biomas Minecraft.folder.zip
+Dataset-Minecraft/*.zip
+trainProcesado_cutout
+resnet50_best.pt
