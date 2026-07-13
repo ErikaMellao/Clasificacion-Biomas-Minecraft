@@ -67,9 +67,9 @@ Resumen de librerías utilizadas en el proyecto:
 
 ---
 
-## Cómo usarlo
+# Cómo usarlo
 
-# Crear entorno virtual con `venv` (Python nativo)
+## Crear entorno virtual con `venv` (Python nativo)
 
 ```bash
 # Crear el entorno
