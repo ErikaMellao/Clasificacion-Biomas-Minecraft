@@ -34,8 +34,8 @@ El proyecto completo abarca:
 La función `predecir_bioma(ruta_archivo)`:
 
 - Detecta automáticamente si el archivo es una **imagen** (`.jpg`, `.jpeg`, `.png`, `.bmp`) o un **video** (`.mp4`, `.avi`, `.mov`, `.mkv`).
-- Para video, samplea frames a intervalos regulares (`frame_skip`) hasta un máximo (`max_frames`) y **promedia las probabilidades** de todos los frames analizados para dar una predicción más robusta.
-- Muestra el bioma reconocido, el porcentaje de confianza, las probabilidades por clase, y finalmente **recomienda los materiales principales** disponibles en ese bioma.
+- Para video, samplea frames a intervalos regulares (`frame_skip`) hasta un máximo (`max_frames`)
+- Muestra el bioma reconocido, el porcentaje de confianza, y finalmente **recomienda los materiales principales** disponibles en ese bioma.
 
 ---
 
@@ -107,33 +107,6 @@ predecir_bioma("mi_video_minecraft.mp4", frame_skip=150, max_frames=400, mostrar
 A continuación se muestra un ejemplo real de salida del modelo al procesar una imagen del bioma **Desierto**:
 
 ![Ejemplo de inferencia - Bioma Desierto](ejemplo_inferencia.png)
-
-```
-Bioma reconocido: Desierto (94.32% de confianza)
-
-Probabilidades por clase:
-  Bioma-mangle: 0.12%
-  Bosque-floral: 0.30%
-  Bosque-oscuro: 0.05%
-  Bosque-palido: 0.08%
-  Desierto: 94.32%
-  Hongos: 0.10%
-  Jungla: 1.20%
-  Meseta: 2.15%
-  Mountains: 0.40%
-  Nieve: 0.05%
-  Pantano: 0.18%
-  Sabana: 1.05%
-
-Materiales principales que puedes encontrar en este bioma:
-   - Arena y Arenisca
-   - Cactus
-   - Templos del desierto (oro, esmeraldas, diamantes)
-   - Fósiles (huesos, carbón)
-   - Aldeas del desierto
-```
-
-> **Importante:** reemplaza `ejemplo_inferencia.png` por una captura real generada al ejecutar `predecir_bioma()` en tu notebook (guarda el gráfico con `plt.savefig("ejemplo_inferencia.png")` justo antes de `plt.show()`, o toma un screenshot del resultado en Jupyter/Colab) y colócala en la misma carpeta que este README.
 
 ---
 
