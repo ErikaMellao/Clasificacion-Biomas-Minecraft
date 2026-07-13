@@ -93,10 +93,10 @@ model.load_state_dict(torch.load("resnet50_best.pt", map_location=device))
 model.eval()
 
 # Predecir sobre una imagen
-predecir_bioma("test/Desierto/imagen1.jpg")
+predecir_bioma("ruta_imagen.jpg")
 
 # Predecir sobre un video
-predecir_bioma("mi_video_minecraft.mp4", frame_skip=150, max_frames=400, mostrar_frames=True)
+predecir_bioma("ruta_video.mp4", frame_skip=150, max_frames=400, mostrar_frames=True)
 
 ```
 
@@ -104,9 +104,9 @@ predecir_bioma("mi_video_minecraft.mp4", frame_skip=150, max_frames=400, mostrar
 
 ## Ejemplo de inferencia
 
-A continuación se muestra un ejemplo real de salida del modelo al procesar una imagen del bioma **Desierto**:
+A continuación se muestra un ejemplo real de salida del modelo al procesar una imagen del bioma **Jungla**:
 
-![Ejemplo de inferencia - Bioma Desierto](ejemplo_inferencia.png)
+![Ejemplo de inferencia - Bioma Jungla](ImagenJungla.png)
 
 ---
 
